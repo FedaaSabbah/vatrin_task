@@ -1,0 +1,89 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+
+<body>
+   <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <div class="page_wrapper">
+            <div class="container">
+              <div class="register_login_container">
+                <div class="left">
+                  <form  action="/register-user" method="POST">
+                    <h2>Personal information</h2>
+                    <div class="form_block_two">
+                      <div class="block">
+                       
+                        <div class="formBlock">
+                            <input
+                            type="text"
+                            id="firstName"
+                            name="firstName" 
+                            placeholder="Enter your First Name"        
+                            />          
+                          </div>
+                      </div>
+                      <div class="block">
+                            <div class="formBlock">
+                            <input
+                            type="text"
+                            id="lastName"
+                            name="lastName" 
+                            placeholder="Enter your Last Name"        
+                            />          
+                          </div>
+                      </div>
+                    </div>
+                    <div>                   
+                      <div class="formBlock">
+                        <input
+                        type="email"
+                        id="email"
+                        name="email" 
+                        placeholder="Enter your Email Address"        
+                        />          
+                      </div>
+                    </div>
+                    <h2>Verify password</h2>
+                    <div class="form_block_two">
+                      <div class="block">
+                       
+                        <div class="formBlock">
+                            <input
+                            type="password"
+                            id="password"
+                            name="password" 
+                            placeholder="Enter your password"        
+                            />          
+                          </div>
+                      </div>
+                      <div class="block">
+                        <div class="formBlock">
+                            <input
+                            type="password"
+                            id="confirmPassword"
+                            name="confirmPassword" 
+                            placeholder="confirm your password"        
+                            />          
+                          </div>
+                      </div>
+                    </div>
+                    <div>                      
+                      <button
+                        class="create-btn"
+                        type="submit"
+                      >
+                        Create an account
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+
+    </main>
+<%- include('includes/end.ejs') %>
+
+

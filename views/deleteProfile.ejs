@@ -1,0 +1,54 @@
+<%- include('includes/head.ejs') %>
+  <link rel="stylesheet" href="/css/forms.css">
+  <link rel="stylesheet" href="/css/profile.css">
+  </head>
+
+  <body>
+    <%- include('includes/navigation.ejs') %>
+
+      <main>
+        <div class="container">
+          <div class="user_container">
+            <div class="user_left_nav">
+              <h2>My account</h2>
+              <div class="links">
+                <a href="/profile">My Account</a>
+                <a href="/showProfile">Show Users</a>
+                <a href="/updateProfile">Edit profile</a>
+                <a href="#">Delete profile</a>
+
+                <form action="/logout" method="POST">
+
+                  <button type="submit">Logout</button>
+
+                </form>
+              </div>
+
+            </div>
+
+
+            <div class="user_right">
+              <form class="delete-profile" action="/deleteProfile" method="POST">
+                <h2>Personal information</h2>
+                <div class="form_block_two">
+                <div>
+                  <input type="password" id="password" name="password" placeholder="Enter your password" />
+                </div>
+                <div>
+                  <button type="submit">
+                    delete personal info
+                  </button>
+                </div>
+              </form>
+            </div>
+
+
+          </div>
+
+
+
+
+      </main>
+
+
+      <%- include('includes/end.ejs') %>

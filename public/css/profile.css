@@ -1,0 +1,94 @@
+.user_container {
+  display: flex;
+  margin-bottom: 50px;
+  min-height: 400px;
+  margin-top: 100px;
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.user_container .user_left_nav {
+  border-right: 1px solid #e0e0e0;
+}
+
+.user_left_nav h2 {
+  text-align: left;
+}
+
+.user_container .user_left_nav .links a {
+  display: block;
+  border-bottom: 1px solid #dddddd;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 0px;
+  width: 280px;
+  /* text-align: center; */
+  margin-top: 20px;
+  cursor: pointer;
+}
+.user_container .user_left_nav .links a:hover,
+.user_container .user_left_nav .links button:hover {
+  background-color: #424242;
+  color: #f5f5f5;
+}
+
+.user_container .user_left_nav .links button {
+  border-bottom: 1px solid #dddddd;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 10px 0px;
+  width: 280px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  display: inline-flex;
+}
+
+.user_right {
+  flex-grow: 1;
+  padding: 0 0 0 29px;
+  margin-left: 40px;
+}
+
+.user_container .user_nfo_panel {
+  padding: 20px;
+  margin-top: 20px;
+  background: #f8f8f8;
+}
+.update-profile {
+  background: #f8f8f8;
+  padding: 15px 25px;
+}
+
+.user_container .user_nfo_panel h1 {
+  margin: 0 0 20px 0;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.user_container .user_nfo_panel span {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* update profile page */
+
+
